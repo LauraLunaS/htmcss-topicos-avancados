@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', 'Sans-serif';
+}
+
+a {
+	transition: .5s;
+}
+
+/* sidebar */
+
+#sidebar {
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	background-color: #7d0099;
+	padding-top: 40px;
+}
+
+#sidebar h1 {
+	color: #FFF;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#sidebar a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#sidebar a:hover {
+	color: #fff825;
+}
+
+#sidebar li {
+	padding: 20px;
+}
+
+.sidebar-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+.logo-doceria {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* conteudo */
+
+.content {
+	position: absolute;
+	left: 300px;
+	width: calc(100% - 300px);
+}
+
+.content h1, .content h2 {
+	color: #7d0099;
+	margin-bottom: 30px;
+}
+
+.content h1 {
+	font-size: 48px;
+}
+
+.content h2 {
+	font-size: 35px;
+}
+
+section {
+	padding-left: 50px;
+}
+
+/* bem vindo */
+
+#sessao-bemvindo {
+	padding-left: 0;
+}
+
+.sessao-bemvindo-content {
+	padding-left: 50px;
+}
+
+#sessao-bemvindo .banner {
+	height: 500px;
+	background-image: url('https://diaadianoticia.com.br/wp-content/uploads/2021/12/shutterstock_1020222631_resized_0V2t4er.jpg');
+	background-size: cover;
+}
+
+#sessao-bemvindo h1 {
+	margin-top: 70px;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after {
+	content: "";
+	display: block;
+	clear: both;
+	margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+	width: 300px;
+	height: 400px;
+	background-image: url('https://images.unsplash.com/photo-1619051805375-7b83440bb11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHNvYnJlbWVzYXN8ZW58MHx8MHx8&auto=format&fit=crop&w=300&q=60');
+	background-position: center;
+	background-size: cover;
+	float: left;
+}
+
+.sessao-descricao {
+	position: absolute;
+	left: 370px;
+	padding-right: 30px;
+}
+
+.sessao-descricao p {
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn, form input[type=submit] {
+	background-color: #7d0099;
+	color: #FFF;
+	text-decoration: none;
+	padding: 20px 40px;
+	transition: .5s;
+	display: block;
+	width: 100px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover {
+	background-color: #2790C6;
+}
+
+/* sessao sobre */
+
+#sessao-sobre .sessao-minibanner {
+	float: right;
+	margin-right: 50px;
+	background-image: url('../img/banner4.jpg');
+}
+
+#sessao-sobre .sessao-descricao {
+	position: absolute;
+	left: 25px;
+	width: calc(100% - 400px);
+}
+
+/* galerias */
+
+.banner-galeria {
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	height: 200px;
+}
+
+#sessao-doces1, #sessao-doces2, #sessao-doces3 {
+	padding-right: 50px;
+	margin-bottom: 50px;
+}
+
+.doces1-imgs {
+	width: 18.8%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img1 {
+	background-image: url('https://images.unsplash.com/photo-1612203985729-70726954388c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29icmVtZXNhc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=300&q=60');
+	margin-left: 0;
+}
+
+#img2 {
+	background-image: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c29icmVtZXNhc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=300&q=60');
+}
+
+#img3 {
+	background-image: url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNvYnJlbWVzYXN8ZW58MHx8MHx8&auto=format&fit=crop&w=300&q=60');
+}
+
+#img4 {
+	background-image: url('https://plus.unsplash.com/premium_photo-1671399556247-d1cc24a93cbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fHNvYnJlbWVzYXN8ZW58MHx8MHx8&auto=format&fit=crop&w=300&q=60');
+}
+
+#img5 {
+	background-image: url('https://images.unsplash.com/photo-1643384420302-c75b97bc8b93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHNvYnJlbWVzYXN8ZW58MHx8MHx8&auto=format&fit=crop&w=300&q=60');
+	margin-right: 0;
+}
+
+.doces2-imgs {
+	width: 32.3%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img6 {
+	background-image: url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=300&q=60');
+	margin-left: 0;
+}
+
+#img7 {
+	background-image: url('https://images.unsplash.com/photo-1515037893149-de7f840978e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=694&q=80');
+}
+
+#img8 {
+	background-image: url('https://images.unsplash.com/photo-1589375025852-a66cdd127efb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+	margin-right: 0;
+}
+
+.doces3-imgs {
+	width: 23.9%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img9 {
+	background-image: url('https://images.unsplash.com/photo-1587536849024-daaa4a417b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+	margin-left: 0;
+}
+
+#img10 {
+	background-image: url('https://images.unsplash.com/photo-1556207724-5a23e88f8cac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=300&q=60');
+}
+
+#img11 {
+	background-image: url('https://images.unsplash.com/photo-1596223575327-99a5be4faf1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=300&q=60');
+}
+
+#img12 {
+	background-image: url('https://images.unsplash.com/photo-1549572189-dddb1adf739b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=300&q=60');
+	margin-right: 0;
+}
+
+/* contato */
+
+#form-contato {
+	width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+	display: block;
+	border: 1px solid #7d0099;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+	border-color: #2790C6;
+}
+
+#form-contato textarea {
+	height: 150px;
+}
+
+#form-contato ::placeholder {
+	color: #b2b2b2;
+}
+
+#form-contato input[type=submit] {
+	margin-left: 0;
+	font-size: 16px;
+	width: 180px;
+}
+
+/* footer */
+
+footer {
+	height: 100px;
+	padding-top: 150px;
+	color: #7d0099;
+}
+
+footer p {
+	text-align: center;
+	font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 210px;
+}

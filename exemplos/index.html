@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+<body>
+    <h2>Utilizando alguns exemplos do curso para praticar</h2>
+    <h5>Formulário</h5>
+    <div>
+        <p>Preencha o formulário para receber novidades</p>
+        <form>
+            <label>Email</label>
+            <input type="email" name="email" required placeholder="Digite o seu email" autofocus>
+            <label>Nome:</label>
+            <input type="text" name="name" required  placeholder="Digite o seu nome">
+            <input type="submit" name="Enviar">
+            <br>
+            <li>Aprendendo a usar required para validação de formulário e autofocus para focar no input (utilizava a funcionalidade de foco só no js)</li>
+        </form>
+    </div>
+
+    <h5>Paragráfo editável</h5>
+    <p contenteditable="true">Este é um paragráfo que você pode editar ein.</p>
+
+    <h5>Criação de sumários</h5>
+    <div>
+        <details open="open">
+            <summary>Cachorro</summary>
+            <p>O cachorro é o animal mais fofo do mundo e tem quatro patinhas</p>
+            <img src="https://s2.glbimg.com/nvjFq8VRjyrpdQqaOeywz-5DFwY=/e.glbimg.com/og/ed/f/original/2021/08/27/captura_de_tela_2021-08-27_as_11.01.15.png">
+        </details>
+        <details open="open">
+            <summary>Gato</summary>
+            <p>O cachorro é o segundo animal mais fofo do mundo e também tem quatro patinhas</p>
+            <img src="https://cinepop.com.br/wp-content/uploads/2023/01/o-gato-de-botas-2.jpg">
+        </details>
+        <form>
+            <p>Animais</p>
+            <input list="animais" name="animal">
+            <datalist id="animais">
+                <option value="Cachorro"></option>
+                <option value="Gato"></option>
+            </datalist>
+        </form>
+    </div>
+    <br>
+    <h5>Animações</h5>
+    <div class="animation-div"></div>
+    <li>Animação básica ao recarregar a página</li>
+
+    <div class="animation-div2"></div>
+    <li>Animação básica com mais passos</li>
+
+    <div class="animation-div3"></div>
+    <li>Animação com delay e infinite</li>
+
+    <div class="box" id="animation-div4">linear</div>
+    <div class="box" id="animation-div5">ease</div>
+    <div class="box" id="animation-div6">ease-in</div>
+    <div class="box" id="animation-div7">ease-out</div>
+    <div class="box" id="animation-div8">ease-in-out</div>
+
+    <li>linear: constante ao longo do tempo</li>
+    <li>ease: começa rápido e termina lento</li>    
+    <li>ease-in: rápido</li>
+    <li>ease-out: rápido - lento</li>
+    <li>ease-in-out: lento - rápido - lento</li>
+
+    <div id="animation-div9"></div>
+    <li>Animação usando ease-out</li>
+
+    <h5>Trabalhando responsividade com media query</h5>
+    <div class="mediaquery"></div>
+</body>
+</html>
